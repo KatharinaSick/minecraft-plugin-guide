@@ -1,0 +1,4 @@
+name: Minecraft Plugin Guide - Demo Plugin
+main: BukkitPlugin
+version: 0.1
+api-version: 1.16
