@@ -54,6 +54,34 @@ public class BukkitPlugin extends JavaPlugin {
     @Override
     public void onEnable() {
         super.onEnable();
+
+        // primary logger of the server
+        // Logger logger = Bukkit.getLogger();
+
+        // logger associated with the plugin
+        Logger logger = getLogger();
+
+        // set the log level
+        logger.setLevel(Level.ALL);
+
+        // log messages to all levels
+        // this logs are also logged to the file, as they are using the plugins logger
+        logger.severe("Severe log message");
+        logger.warning("Warning log message");
+        logger.info("Info log message");
+        logger.config("Config log message");
+        logger.fine("Fine log message");
+        logger.finer("Finer log message");
+        logger.finest("Finest log message");
+
+        // another way of logging messages to all log levels
+        logger.log(Level.SEVERE, "Another Severe log message");
+        logger.log(Level.WARNING, "Another Warning log message");
+        logger.log(Level.INFO, "Another Info log message");
+        logger.log(Level.CONFIG, "Another Config log message");
+        logger.log(Level.FINE, "Another Fine log message");
+        logger.log(Level.FINER, "Another Finer log message");
+        logger.log(Level.FINEST, "Another Finest log message");
     }
 
     @Override
