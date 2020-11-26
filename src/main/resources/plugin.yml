@@ -2,3 +2,4 @@ name: MinecraftPluginGuide_DemoPlugin
 main: BukkitPlugin
 version: 0.1
 api-version: 1.16
+prefix: custom-log-prefix
