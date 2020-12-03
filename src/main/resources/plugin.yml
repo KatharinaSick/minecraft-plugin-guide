@@ -4,13 +4,6 @@ version: 0.1
 api-version: 1.16
 prefix: custom-log-prefix
 commands:
-  log-anything:
-    description: Logs a message to the console
-    aliases: [loganything, log_anything]
-    usage: /log-anything
-  log:
-    description: Logs the given message to the console (info level)
-    usage: /log [message]
   communicate:
     description: Communicates with the player
     usage: /communicate
