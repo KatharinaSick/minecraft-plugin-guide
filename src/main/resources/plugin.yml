@@ -11,3 +11,6 @@ commands:
   log:
     description: Logs the given message to the console (info level)
     usage: /log [message]
+  communicate:
+    description: Communicates with the player
+    usage: /communicate
